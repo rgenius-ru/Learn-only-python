@@ -36,7 +36,26 @@ for element in heap:
     if type(element) == type(0.0) or type(element) == type(0):
         count_numbers = count_numbers + 1  # count_number += 1
 
-    if type(element) == type(''):
+    elif type(element) == type(''):
         count_words = count_words + 1  # count_words += 1
 
 print('Чисел:', count_numbers, 'Слов:', count_words)
+
+
+# Обзор темы наборы (множества) - set
+# 1,2,2,3 и 2,3,4 = 1,2,3,4
+
+numbers1 = 1, 2, 2, 3
+numbers2 = 2, 3, 4
+
+uniqai_numbers = []
+
+for element in numbers1:
+    if element not in uniqai_numbers:
+        uniqai_numbers.append(element)
+
+for element in numbers2:
+    if element not in uniqai_numbers:
+        uniqai_numbers.append(element)
+
+print(uniqai_numbers)

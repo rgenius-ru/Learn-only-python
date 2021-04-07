@@ -13,6 +13,7 @@ for element in numbers:
 
 print()
 
+
 # Задание10 - создать кортеж с определенным набором чисел и вывести
 # рандомное
 import random
@@ -23,6 +24,7 @@ i = random.randint(0, 9)
 
 print(i, numbers[i])
 print()
+
 
 # Задание11 - создать произвольный кортеж и посчитать сколько в нём
 # слов и сколько чисел
@@ -40,22 +42,20 @@ for element in heap:
         count_words = count_words + 1  # count_words += 1
 
 print('Чисел:', count_numbers, 'Слов:', count_words)
+print()
 
 
 # Обзор темы наборы (множества) - set
 # 1,2,2,3 и 2,3,4 = 1,2,3,4
+print('Обзор темы наборы (множества) - set')
 
 numbers1 = 1, 2, 2, 3
 numbers2 = 2, 3, 4
 
-uniqai_numbers = []
+unique_numbers = []
 
-for element in numbers1:
-    if element not in uniqai_numbers:
-        uniqai_numbers.append(element)
+for element in numbers1 + numbers2:
+    if element not in unique_numbers:
+        unique_numbers.append(element)
 
-for element in numbers2:
-    if element not in uniqai_numbers:
-        uniqai_numbers.append(element)
-
-print(uniqai_numbers)
+print(unique_numbers)

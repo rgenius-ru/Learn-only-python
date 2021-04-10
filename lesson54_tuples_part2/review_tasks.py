@@ -59,6 +59,3 @@ for element in numbers1 + numbers2:
         unique_numbers.append(element)
 
 print(unique_numbers)
-
-unique_numbers_set = set((numbers1 + numbers2))
-print(unique_numbers_set)

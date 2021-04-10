@@ -45,7 +45,7 @@ print('Чисел:', count_numbers, 'Слов:', count_words)
 print()
 
 
-# Обзор темы наборы (множества) - set
+# Обзор темы наборы (множества) - set. Таблица: "Типы данных" - https://vk.cc/aBWHhi
 # 1,2,2,3 и 2,3,4 = 1,2,3,4
 print('Обзор темы наборы (множества) - set')
 
@@ -59,3 +59,6 @@ for element in numbers1 + numbers2:
         unique_numbers.append(element)
 
 print(unique_numbers)
+
+unique_numbers_set = set((numbers1 + numbers2))
+print(unique_numbers_set)

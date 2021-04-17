@@ -44,3 +44,28 @@ text = """
 По дороге домой Шурочка все же немного всплакнула. Чистыми слезами. С чистой печалью о несостоявшемся счастье. 
 """
 
+text2 = text.lower()
+# print(text2)
+
+text2 = text2.replace(",", '')
+text2 = text2.replace("-", '')
+text2 = text2.replace("?", '')
+text2 = text2.replace(".", '')
+text2 = text2.replace("«", '')
+text2 = text2.replace("»", '')
+text2 = text2.replace("–", '')
+text2 = text2.replace("  ", ' ')
+text2 = text2.replace("\n", ' ')
+# print(text2)
+
+words = text2.split(' ')
+# print(words)
+
+
+set_words = set(words)
+print(set_words)
+print(len(set_words))
+
+# frozen set
+
+
